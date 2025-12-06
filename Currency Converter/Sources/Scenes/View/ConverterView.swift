@@ -29,7 +29,7 @@ final class ConverterView: UIView {
     
     lazy var fromSegmentedControl: UISegmentedControl = {
         let control = UISegmentedControl(items: ["RUB", "USD", "EUR"])
-        control.selectedSegmentIndex = 1
+        control.selectedSegmentIndex = 0
         
         control.addTarget(self, action: #selector(inputChanged), for: .valueChanged)
         
@@ -40,7 +40,7 @@ final class ConverterView: UIView {
     
     lazy var toSegmentedControl: UISegmentedControl = {
         let control = UISegmentedControl(items: ["RUB", "USD", "EUR"])
-        control.selectedSegmentIndex = 0
+        control.selectedSegmentIndex = 1
         
         control.addTarget(self, action: #selector(inputChanged), for: .valueChanged)
         
